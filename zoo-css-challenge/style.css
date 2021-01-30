@@ -29,10 +29,6 @@ section {
   background-color: #f8f0fb;
 }
 
-img {
-  border: 5px solid #8075ff;
-}
-
 h1,
 h2,
 h3,
@@ -76,6 +72,7 @@ footer {
 }
 
 .introduction {
+  background-color: white;
 }
 
 #badge {
@@ -85,13 +82,15 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
 
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
+  transition-property: background-color;
+  transition-duration: 1s;
 }
 
 #badge:hover {
@@ -103,27 +102,46 @@ footer {
   font-size: 125%;
 }
 
+#giraffeparagraph {
+  margin: 30px;
+  color:#BEEE62;
+  font-size: larger;
+}
+
+#news {
+  text-align: center;
+}
+.paragraph {
+  margin: 30px;
+}
+
 .image-container img {
   vertical-align: top;
-  border: 5px solid #747c92;
+  border: 5px solid rgba(27, 64, 75, 0.75)
 }
 
 .image-container img:first-of-type {
   vertical-align: bottom;
 }
-
+.ligthcolor {
+  color: #AFE4E1
+}
 .tigers {
   background-color: #0b3c49;
-  color: #f0e100;
+  color: #AFE4E1;
 }
 
 .giraffe {
-  background-color: #465775;
+  background-color: #483C46;
   color: #56e39f;
 }
 
-.giraffe h2 {
-  color: #ef6f6c;
+.giraffehead {
+  color:#F4743B ;
+}
+.paragraph-giraffe {
+  color:#BEEE62;
+  margin: 30px;
 }
 
 .card {
@@ -148,7 +166,7 @@ footer {
 .card time {
   opacity: 0.5;
   display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
 
 /*Education*/
@@ -166,13 +184,19 @@ footer {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+  border-radius: 10px;
 }
 
 .education-container h3,
 .education-container p {
   margin-bottom: 1em;
 }
-
+#largerbutton:hover {
+  background-color: #0B3C49;
+}
+#largerbutton {
+  font-size: larger;
+}
 /*Membership*/
 
 .membership {
@@ -187,9 +211,22 @@ footer {
 .membership strong {
   color: #ff7f11;
 }
+.paragraph-membership {
+  width: 700px;
+  margin: auto;
+}
 
 /*Programs*/
 
 .programs .card {
-  display: block;
+  display: inline-block;
+}
+#children {
+  background-color: rosybrown;
+}
+#youth {
+  background-color: salmon;
+}
+#adult {
+  background-color: sandybrown;
 }
